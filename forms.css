@@ -8,10 +8,6 @@
    ------------------- */
 
 
-/* Excessive padding causes horizontal scroll — capped at 20px */
 .form-builder--wrap {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  box-sizing: border-box !important;
   background-color: #3b82f6 !important;
 }
