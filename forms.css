@@ -1,0 +1,144 @@
+/* ============================================
+   GHL Form Fixes
+   Repo: github.com/alejandro-jf/ghl-form-fixes
+   ============================================ */
+
+/* --- CHANGELOG ---
+   2026-04-17 | Initial file | Fixed scroll, layout, responsive issues
+   ------------------- */
+
+
+/* =====================
+   LAYOUT & SCROLL FIXES
+   ===================== */
+
+#hl_form_builder_main,
+.hl-app,
+.hl_form-builder--main {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.ghl-form-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Excessive padding causes horizontal scroll — capped at 20px */
+.form-builder--wrap {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+
+/* =====================
+   INPUT FIELD STYLES
+   ===================== */
+
+.form-control {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 10px 14px !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 6px !important;
+  font-size: 15px !important;
+  font-family: inherit !important;
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  outline: none !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.form-control:focus {
+  border-color: #4f46e5 !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1) !important;
+}
+
+textarea.form-control {
+  min-height: 120px !important;
+  resize: vertical !important;
+}
+
+
+/* =====================
+   EMAIL ICON ALIGNMENT
+   ===================== */
+
+.email-input {
+  position: relative !important;
+}
+
+.email-input .input-icon {
+  position: absolute !important;
+  left: 10px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 18px !important;
+  height: 18px !important;
+  pointer-events: none !important;
+}
+
+.email-input .form-control {
+  padding-left: 36px !important;
+}
+
+
+/* =====================
+   SUBMIT BUTTON
+   ===================== */
+
+.form-builder--btn-submit .button-element {
+  width: 100% !important;
+  padding: 12px 24px !important;
+  border-radius: 6px !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.form-builder--btn-submit .button-element:hover {
+  opacity: 0.85 !important;
+}
+
+
+/* =====================
+   CHECKBOX / T&C FIXES
+   ===================== */
+
+.terms-and-conditions .checkbox-container {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+  margin-bottom: 10px !important;
+}
+
+.terms-and-conditions input[type="checkbox"] {
+  margin-top: 3px !important;
+  flex-shrink: 0 !important;
+}
+
+.terms-and-conditions label {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}
+
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+
+@media (max-width: 600px) {
+  .form-builder--wrap {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ghl-form-wrap {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
