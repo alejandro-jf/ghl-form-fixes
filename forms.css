@@ -5,13 +5,7 @@
 
 /* --- CHANGELOG ---
    2026-04-17 | Initial file | Fixed scroll, layout, responsive issues
-   2026-04-17 | CSS load test — bright green border on form
    ------------------- */
-
-/* === CSS LOAD TEST — remove once confirmed working === */
-.form-builder--wrap {
-  border: 4px solid lime !important;
-}
 
 
 /* =====================
