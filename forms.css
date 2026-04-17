@@ -25,6 +25,12 @@
   box-sizing: border-box !important;
 }
 
+/* Background test */
+#_builder-form,
+.form-builder--wrap {
+  background-color: #3b82f6 !important;
+}
+
 /* Excessive padding causes horizontal scroll — capped at 20px */
 .form-builder--wrap {
   padding-left: 20px !important;
