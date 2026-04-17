@@ -5,7 +5,16 @@
 
 /* --- CHANGELOG ---
    2026-04-17 | Initial file | Fixed scroll, layout, responsive issues
+   2026-04-17 | Hide form during CSS injection to prevent flash
    ------------------- */
+
+/* Hide form until CSS is injected — prevents brown-to-blue flash */
+.form-builder--wrap {
+  visibility: hidden !important;
+}
+.ghl-css-ready .form-builder--wrap {
+  visibility: visible !important;
+}
 
 
 /* =====================
