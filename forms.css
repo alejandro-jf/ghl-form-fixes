@@ -8,6 +8,76 @@
    ------------------- */
 
 
-.form-builder--wrap {
-  background-color: #3b82f6 !important;
+#hl_form_builder_main,
+.hl-app,
+#form-builder,
+.ghl-form-wrap,
+#_builder-form,
+.field-container,
+.captcha-container,
+.form-builder--btn-submit {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#_builder-form .builder-inline.fields-container {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 0 16px !important;
+}
+
+#_builder-form .builder-inline.fields-container > * {
+  grid-column: 1 / -1 !important;
+  max-width: none !important;
+  width: auto !important;
+  flex: none !important;
+}
+
+#_builder-form .builder-inline.fields-container > .form-field-col--6:not(:has(.d-none)) {
+  grid-column: auto !important;
+}
+
+#_builder-form .builder-inline.fields-container > .form-field-col--6:has(.d-none) {
+  display: none !important;
+}
+
+label {
+  color: #ffffff !important;
+}
+
+#error-container {
+  position: absolute;
+  top: -7px;
+  display: flex;
+  translate: -10px;
+  justify-content: end;
+  font-size: 0px !important;
+  right: 7px;
+}
+#error-container.error {
+  animation: showError 0.5s;
+}
+#error-container.error:before {
+  content: "* Field Required";
+  color: red;
+  font-size: 11px !important;
+}
+span.error {
+  position: absolute;
+  bottom: 25px;
+  font-size: 12px !important;
+  animation: showError 0.5s;
+  right: 10px;
+  top: -7px;
+  translate: 10px;
+  display: flex !important;
+  justify-content: end;
+}
+.captcha-container {
+  overflow: visible !important;
+}
+
+@keyframes showError {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
