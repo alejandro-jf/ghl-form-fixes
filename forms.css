@@ -16,7 +16,7 @@
 .field-container,
 .captcha-container,
 .form-builder--btn-submit {
-  padding: 0 !important;
+  padding: 20 !important;
   margin: 0 !important;
 }
 
